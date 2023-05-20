@@ -17,20 +17,22 @@ const CartItem = ({ data }) => {
     return (
         <div className='cartItem'>
             <img src={data.img} alt={data.name} />
-            <span style={{ fontFamily: 'medium', fontSize: '14px' }}>{data.name}</span>
-            <span >Price: Rs. {data.price}/-</span>
-            <div style={{ textAlign: 'center' }}>
-                <span>Quantity</span>
-                <br />
-                <select value={data.qty} onChange={(e) => { handleUpdateQty(e.target.selectedIndex + 1) }}>
-                    {
-                        [...Array(data.inStock)].map((item, index) => {
-                            return (<option key={index} value={index + 1}>{index + 1}</option>)
-                        })
-                    }
-                </select>
+            <div className='cartItemDetails'>
+                <span style={{ fontFamily: 'medium', fontSize: '14px' }}>{data.name}</span>
+                <span>Price: Rs. {data.price}/-</span>
+                <div style={{ textAlign: 'center' }}>
+                    <span>Quantity</span>
+                    <br />
+                    <select value={data.qty} onChange={(e) => { handleUpdateQty(e.target.selectedIndex + 1) }}>
+                        {
+                            [...Array(data.inStock)].map((item, index) => {
+                                return (<option key={index} value={index + 1}>{index + 1}</option>)
+                            })
+                        }
+                    </select>
+                </div>
+                <MdDelete onClick={removeItem} style={{ cursor: 'pointer' }} fontSize={22} />
             </div>
-            <MdDelete onClick={removeItem} style={{ cursor: 'pointer' }} fontSize={22} />
         </div>
     )
 }
