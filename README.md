@@ -1,5 +1,6 @@
 # Shopping Cart ReactJs
 Shopping Cart App developed in Reactjs
+App Link: ['app-url'](https://shopping-cart-reactjs-e9422.web.app/)
 
 !['add-to-cart'](./screenshots/img_two.png)
 
@@ -10,6 +11,7 @@ Shopping Cart App developed in Reactjs
 * Reducer (useReducer() Hook)
 * Faker (to generate random products data and random images)
 * React-Router-Dom for routing of App.
+* Firebase Hosting to Deploy App.
 
 ### Features included
 * Displays list of products, with products price, ratings, days of delivery etc.
