@@ -1,6 +1,6 @@
 # Shopping Cart ReactJs
 Shopping Cart App developed in Reactjs
-App Link: ['app-url'](https://shopping-cart-reactjs-e9422.web.app/)
+[Click here! to check the live app.](https://shopping-cart-reactjs-e9422.web.app/)
 
 !['add-to-cart'](./screenshots/img_two.png)
 
